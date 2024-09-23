@@ -1,19 +1,17 @@
-Program Origin and Purpose
+## Program Origin and Purpose
 This program was developed as a project assignment for my university course in System-Level Programming. During this task, we explored deeper aspects of the C programming language, helping us understand how commands and code snippets transform into processes that can be interpreted by the computer.
 
-General Description
+## General Description
 The program enables two concurrently running versions of itself to communicate either through sockets or files. During the communication, the receiver program obtains data from the sender program necessary to generate a two-color depth image. This data includes the image size and specific roaming values.
 
-System Requirements
+## System Requirements
 The program was written using GCC version 11.3.0. For proper functionality, please use this version on a Linux 22.04 operating system. To compile the program, enter the following command in the terminal:
 
 bash
-Copy code
 gcc chart.c myown.c -fopenmp -o chart
 To run the program, use the following command with the appropriate switches separated by spaces:
 
 bash
-Copy code
 ./chart
 Available Switches:
 --version: Displays the current version of the program, the date of the last modification, and other information in random order.
